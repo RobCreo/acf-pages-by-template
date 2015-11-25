@@ -17,10 +17,8 @@ load_plugin_textdomain( 'acf_pages_by_template', false, dirname( plugin_basename
 
 
 // 2. Include field type for ACF5
-// $version = 5 and can be ignored until ACF6 exists
 function include_field_types_acf_pages_by_template( $version ) {
-  echo("Not compatible with ACF v5 yet");
-  // include_once('acf_pages_by_template_v5.php');
+  include_once('acf_pages_by_template_v5.php');
 }
 add_action('acf/include_field_types', 'include_field_types_acf_pages_by_template'); 
 
